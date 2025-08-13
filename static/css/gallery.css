@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    max-width: 1440px;
+    background-color: #1D1616;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero>img {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2e2626;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile>img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.pro-content>p {
+    margin-top: 10px;
+}
+
+.boxs {
+    display: flex;
+    margin-top: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 2px solid #c6c6c6;
+}
+
+.box:first-child {
+    margin-left: 0;
+}
+
+.parrots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.parrot {
+    border: 1px solid #6d6d6d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.parrot>img {
+    width: 100%;
+}
+
+.parr-content {
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.parr-content>h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parr-content>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.see-parrot {
+    border: none;
+    outline: none;
+    background-color: #0A5EB0;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.see-parrot:hover {
+    background-color: #fff;
+    color: #1D1616;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+.error {
+    color: red;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(67, 0, 0);
+    border: 3px solid rgb(128, 0, 0);
+    border-radius: 10px;
+}
+
+.not-found {
+    color: yellow;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(67, 77, 0);
+    border: 3px solid rgb(128, 146, 0);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .parrots {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .parrots {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

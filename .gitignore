@@ -8,13 +8,6 @@ __pycache__
 venv/
 myworld/
 
-# Database
-db.sqlite3
-
-# Static files
-/static/
-/staticfiles/
-
 # Windows
 Thumbs.db*
 ehthumbs*.db
