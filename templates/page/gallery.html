@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/icon.png' %}" />
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <title>World Parrots || Gallery</title>
+</head>
+
+<body>
+    <div class="hero">
+        <img src="{% static 'img/banner1.jpeg' %}" alt="World Parrots">
+    </div>
+    <div class="info">
+        <div class="profile">
+            <img src="{% static 'img/icon.png' %}" alt="World Parrots">
+            <div class="pro-content">
+                <h3>World Parrots</h3>
+                <p>Pixel art NFTs from world parrots collection that is produced from 10.000 NFTs.</p>
+                <div class="boxs">
+                    <div class="box">pfps</div>
+                    <div class="box">10,000</div>
+                    <a href="https://opensea.io/collection/world-parrots" target="_blank">
+                        <button class="see-parrot" style="margin-left: 5px;">See Collection</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if error %}
+    <div id="error" class="error">{{ error }}</div>
+    {% endif %}
+
+    {% if nfts %}
+    <div class="parrots">
+        {% for nft in nfts %}
+        <div class="parrot">
+            <img src="{{ nft.image_url }}" alt="parrot">
+            <div class="parr-content">
+                <h4>{{ nft.name }}</h4>
+                <div>
+                    <h5>Standard: {{ nft.token_standard }}</h5>
+                    <a href="{{ nft.opensea_url }}" target="_blank">
+                        <button class="see-parrot">See Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="not-found">not found</p>
+    {% endif %}
+
+    {% if next_cursor %}
+    <form method="get">
+        <input type="hidden" name="next" value="{{ next_cursor }}">
+        <input type="hidden" name="limit" value="50">
+        <button type="submit" class="see-parrot">next</button>
+    </form>
+    {% endif %}
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const content = document.getElementById('content');
+        const error = document.getElementById('error');
+
+        content.style.display = 'none';
+        error.style.display = 'none';
+
+        setTimeout(() => {
+            content.style.display = 'block';
+        }, 800);
+    });
+</script>
+
+</html>
