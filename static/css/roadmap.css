@@ -11,6 +11,7 @@ h1 {
   padding: 30px 0;
   color: #fff;
   padding-bottom: 0;
+  width: 100%;
 }
 
  .timeline ul li{
@@ -143,7 +144,7 @@ phase {
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 120px);
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
@@ -151,7 +152,7 @@ phase {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #FFFBDE transparent transparent;
+    border-color: transparent #24b4b2 transparent transparent;
   }
 }
 

@@ -28,7 +28,7 @@
         <div class="offcanvas-body">
             <a href="{% url 'main' %}" class="d-block p-2 fw-bold text-white">HOME</a>
             <a href="#roadmap" class="d-block p-2 fw-bold text-white">ROADMAP</a>
-            <a href="{% url 'mint' %}" class="d-block p-2 fw-bold text-white">MINT</a>
+            <a href="#about" class="d-block p-2 fw-bold text-white">ABOUT</a>
             <a href="{% url 'gallery' %}" class="d-block p-2 fw-bold text-white">GALLERY</a>
             <a href="#" class="d-block p-2 fw-bold text-white">$WRP (SOON)</a>
         </div>
@@ -43,7 +43,7 @@
             <div class="col-6 d-none d-md-flex justify-content-end align-items-center">
                 <a href="#" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP (SOON)</a>
                 <a href="{% url 'gallery' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">GALLERY</a>
-                <a href="{% url 'mint' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">MINT</a>
+                <a href="#about" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ABOUT</a>
                 <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'main' %}" class="mx-1 px-3 text-white my-bg-blue p-2 fw-bold">HOME</a>
             </div>
@@ -66,18 +66,12 @@
                 <div class="d-flex flex-wrap gap-3 pt-4">
                     <a href="https://discord.gg/pA4EeHsj94"
                         class="fs-4 text-white text-decoration-none d-flex align-items-center">
-                        <span class="p-2 rounded fs-3 me-2 d-flex align-items-center"
-                            style="background-color: #5C6BC0;">
-                            <i class="fab fa-discord"></i>
-                        </span>
+                        <img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="margin-right: 10px; border-radius: 6px;">
                         Join The Discord
                     </a>
                     <a href="https://discord.gg/pA4EeHsj94"
                         class="fs-4 text-white text-decoration-none d-flex align-items-center">
-                        <span class="p-2 rounded fs-3 me-2 d-flex align-items-center"
-                            style="background-color: #ee3a5e;">
-                            <i class="fab fa-instagram"></i>
-                        </span>
+                        <img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30" style="margin-right: 10px;">
                         Join The Instagram
                     </a>
                     <a href="https://opensea.io/collection/world-parrots" class="blue_btn p-2 px-4">Buy Parrot</a>
@@ -123,7 +117,7 @@
     </div>
 
     <!-- Swiper -->
-    <div class="container-lg mt-5 p-3 px-3 px-md-5">
+    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about">
         <h2 class="display-5 fw-bold">{{ section.section_title_content }}</h2>
         <p style='border-bottom: 5px dotted #fff; padding-bottom: 40px !important; margin-bottom: 0 !important;'
             class='pt-3 pb-4 fs-5'>
@@ -147,7 +141,7 @@
         <h2 class="mt-5 fs-3 text-center fw-bold">
             You can view the World Parrots collection on:
         </h2>
-        <div class="d-flex w-100 mt-2 justify-content-center row">
+        <div class="d-flex mt-2 justify-content-center row">
             <a class="gradiant_btn mx-4 mt-3" href="https://opensea.io/collection/world-parrots"
                 style="border-radius: 50px; color: #fff;">
                 OPENSEA
@@ -197,7 +191,7 @@
                     {{ road_map.roadmap_body_content|safe }}
                 </p>
                 <section class="timeline">
-                    <ul>
+                    <ul style="padding-left: 0;">
                         {% for box in road_map.roadmap_boxes.all %}
                         <li>
                             <div class="reveal">
@@ -252,15 +246,15 @@
     <!-- Footer -->
     <footer>
         <div style="background-color: #333;" class="p-3 text-center">
-            <a href="https://discord.gg/pA4EeHsj94" class="mx-2 text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/discord.png' %}" alt="discord" width="30" height="30"></a>
-            <a href="https://instagram.com/worldparrotsnft" class="mx-2 text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/instagram.png' %}" alt="instagram" width="30" height="30"></a>
-            <a href="https://twitter.com/worldparrotsnft" class="mx-2 text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/x_ico.png' %}" alt="x_ico" width="30" height="30"></a>
-            <a href="https://opensea.io/collection/world-parrots" class="mx-2 text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/opensea.png' %}" alt="opensea" width="30" height="30"></a>
-            <a href="https://rarible.com/world-parrots/items" class="mx-2 text-white px-2 fs-3 rounded-circle"
+            <a href="https://discord.gg/pA4EeHsj94" class="text-white px-2 fs-3 rounded-circle"
+                style="padding: 10px !important;"><img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="border-radius: 6px;"></a>
+            <a href="https://instagram.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
+                style="padding: 10px !important;"><img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30"></a>
+            <a href="https://twitter.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
+                style="padding: 10px !important;"><img src="{% static 'img/X_ico.jpg' %}" alt="x_ico" width="30" height="30" style="border-radius: 6px;"></a>
+            <a href="https://opensea.io/collection/world-parrots" class="text-white px-2 fs-3 rounded-circle"
+                style="padding: 10px !important;"><img src="{% static 'img/opensea.png' %}" alt="opensea" width="30" height="30" style="border-radius: 6px;"></a>
+            <a href="https://rarible.com/world-parrots/items" class="text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><img src="{% static 'img/rarible.png' %}" alt="rarible" width="30" height="30"></a>
             <div class="text-white mt-3 fs-5">
                 ©2025: <a class="ps-2 text-white" href="#">WorldParrots.com — Every NFT, A Wing for Change</a>
