@@ -30,7 +30,7 @@
             <a href="#about" class="d-block p-2 fw-bold text-white">ABOUT</a>
             <a href="{% url 'gallery' %}" class="d-block p-2 fw-bold text-white">GALLERY</a>
             <a href="#roadmap" class="d-block p-2 fw-bold text-white">ROADMAP</a>
-            <a href="#" class="d-block p-2 fw-bold text-white">$WRP TOKEN (SOON)</a>
+            <a href="#token" class="d-block p-2 fw-bold text-white">$WRP TOKEN (SOON)</a>
         </div>
     </div>
 
@@ -41,7 +41,7 @@
                 <img src="{% static 'img/Logo.png' %}" style="width: 170px;">
             </div>
             <div class="col-6 d-none d-md-flex justify-content-end align-items-center">
-                <a href="#" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN (SOON)</a>
+                <a href="#token" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN (SOON)</a>
                 <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'gallery' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">GALLERY</a>
                 <a href="#about" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ABOUT</a>
@@ -60,7 +60,7 @@
                 <img class="w-100" src="{% static 'img/Bnr.png' %}">
             </div>
             <div class="col-md-8 ps-md-5">
-                <div class="text_box p-4" id="about">
+                <div class="text_box p-4">
                     {{ hero.hero_body_content|safe }}
                 </div>
                 <div class="d-flex flex-wrap gap-3 pt-4">
@@ -117,7 +117,7 @@
     </div>
 
     <!-- Swiper -->
-    <div class="container-lg mt-5 p-3 px-3 px-md-5" style="border-top: 5px dotted #fff; padding-top: 40px !important;">
+    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about" style="border-top: 5px dotted #fff; padding-top: 40px !important;">
         <h2 class="display-5 fw-bold">{{ section.section_title_content }}</h2>
         <p style='padding-bottom: 40px !important; margin-bottom: 0 !important;'
             class='pt-3 pb-4 fs-5'>
@@ -218,7 +218,7 @@
 
     <section class="w-100 p-3 px-3 px-md-5 container-lg">
         <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
-            <div style="border-top: 5px dotted #fff;" class="py-5 w-100 p-0 m-0 d-flex row">
+            <div style="border-top: 5px dotted #fff;" class="py-5 w-100 p-0 m-0 d-flex row" id="token">
                 <div class="col-md-6 p-0 m-0">
                     <h2 class="fs-2 fw-bold mb-4">
                         {{ wrp.WRP_title_content }}
@@ -227,7 +227,7 @@
                         {{ wrp.WRP_body_content|safe }}
                     </p>
                     <div class="w-100 pt-5 d-flex justify-content-center">
-                        <a href="#" class="blue_btn p-2 px-4 mb-5">$WRP token (soon)</a>
+                        <a href="#token" class="blue_btn p-2 px-4 mb-5">$WRP token (soon)</a>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 m-0">
