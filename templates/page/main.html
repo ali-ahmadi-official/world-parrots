@@ -27,10 +27,10 @@
         </div>
         <div class="offcanvas-body">
             <a href="{% url 'main' %}" class="d-block p-2 fw-bold text-white">HOME</a>
-            <a href="#roadmap" class="d-block p-2 fw-bold text-white">ROADMAP</a>
             <a href="#about" class="d-block p-2 fw-bold text-white">ABOUT</a>
             <a href="{% url 'gallery' %}" class="d-block p-2 fw-bold text-white">GALLERY</a>
-            <a href="#" class="d-block p-2 fw-bold text-white">$WRP (SOON)</a>
+            <a href="#roadmap" class="d-block p-2 fw-bold text-white">ROADMAP</a>
+            <a href="#" class="d-block p-2 fw-bold text-white">$WRP TOKEN (SOON)</a>
         </div>
     </div>
 
@@ -41,10 +41,10 @@
                 <img src="{% static 'img/Logo.png' %}" style="width: 170px;">
             </div>
             <div class="col-6 d-none d-md-flex justify-content-end align-items-center">
-                <a href="#" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP (SOON)</a>
+                <a href="#" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN (SOON)</a>
+                <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'gallery' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">GALLERY</a>
                 <a href="#about" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ABOUT</a>
-                <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'main' %}" class="mx-1 px-3 text-white my-bg-blue p-2 fw-bold">HOME</a>
             </div>
             <div class="col-6 d-flex d-md-none justify-content-end align-items-center fs-1">
@@ -60,7 +60,7 @@
                 <img class="w-100" src="{% static 'img/Bnr.png' %}">
             </div>
             <div class="col-md-8 ps-md-5">
-                <div class="text_box p-4">
+                <div class="text_box p-4" id="about">
                     {{ hero.hero_body_content|safe }}
                 </div>
                 <div class="d-flex flex-wrap gap-3 pt-4">
@@ -69,7 +69,7 @@
                         <img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="margin-right: 10px; border-radius: 6px;">
                         Join The Discord
                     </a>
-                    <a href="https://discord.gg/pA4EeHsj94"
+                    <a href="https://instagram.com/worldparrotsnft"
                         class="fs-4 text-white text-decoration-none d-flex align-items-center">
                         <img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30" style="margin-right: 10px;">
                         Join The Instagram
@@ -117,9 +117,9 @@
     </div>
 
     <!-- Swiper -->
-    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about">
+    <div class="container-lg mt-5 p-3 px-3 px-md-5" style="border-top: 5px dotted #fff;">
         <h2 class="display-5 fw-bold">{{ section.section_title_content }}</h2>
-        <p style='border-bottom: 5px dotted #fff; padding-bottom: 40px !important; margin-bottom: 0 !important;'
+        <p style='padding-bottom: 40px !important; margin-bottom: 0 !important;'
             class='pt-3 pb-4 fs-5'>
             {{ section.section_body_content|safe }}
         </p>
@@ -156,7 +156,7 @@
                 style="padding: 10px !important;"><i class="fab fa-discord"></i></a>
             <a href="https://instagram.com/worldparrotsnft" class="mx-2 text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/worldparrotsnft" class="mx-2 text-white px-2 fs-3 rounded-circle"
+            <a href="https://x.com/worldparrotsnft" class="mx-2 text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </section>
@@ -250,7 +250,7 @@
                 style="padding: 10px !important;"><img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="border-radius: 6px;"></a>
             <a href="https://instagram.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30"></a>
-            <a href="https://twitter.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
+            <a href="https://x.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><img src="{% static 'img/X_ico.jpg' %}" alt="x_ico" width="30" height="30" style="border-radius: 6px;"></a>
             <a href="https://opensea.io/collection/world-parrots" class="text-white px-2 fs-3 rounded-circle"
                 style="padding: 10px !important;"><img src="{% static 'img/opensea.png' %}" alt="opensea" width="30" height="30" style="border-radius: 6px;"></a>
