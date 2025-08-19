@@ -1,0 +1,13 @@
+{
+    "name": "World Parrots",
+    "short_name": "World Parrots",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/static/favicon.ico/",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        }
+    ]
+}
