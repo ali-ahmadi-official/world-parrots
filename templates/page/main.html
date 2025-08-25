@@ -31,7 +31,7 @@
             <a href="#about" class="d-block p-2 fw-bold text-white">ABOUT</a>
             <a href="{% url 'gallery' %}" class="d-block p-2 fw-bold text-white">GALLERY</a>
             <a href="#roadmap" class="d-block p-2 fw-bold text-white">ROADMAP</a>
-            <a href="#token" class="d-block p-2 fw-bold text-white">$WRP TOKEN (SOON)</a>
+            <a href="#token" class="d-block p-2 fw-bold text-white">$WRP TOKEN</a>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
                 <img src="{% static 'img/Logo.png' %}" style="width: 170px;">
             </div>
             <div class="col-6 d-none d-md-flex justify-content-end align-items-center">
-                <a href="#token" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN (SOON)</a>
+                <a href="#token" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN</a>
                 <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'gallery' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">GALLERY</a>
                 <a href="#about" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ABOUT</a>
@@ -56,82 +56,89 @@
 
     <!-- Intro Section -->
     <section class="container-lg p-3 px-3 px-md-5">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <img class="w-100" src="{% static 'img/Bnr.png' %}">
-            </div>
-            <div class="col-md-8 ps-md-5">
-                <div class="text_box p-4">
-                    {{ hero.hero_body_content|safe }}
+        <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img class="w-100" src="{% static 'img/Bnr.png' %}">
                 </div>
-                <div class="d-flex flex-wrap gap-3 pt-4">
-                    <a href="https://discord.gg/pA4EeHsj94"
-                        class="fs-4 text-white text-decoration-none d-flex align-items-center">
-                        <img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="margin-right: 10px; border-radius: 6px;">
-                        Join The Discord
-                    </a>
-                    <a href="https://instagram.com/worldparrotsnft"
-                        class="fs-4 text-white text-decoration-none d-flex align-items-center">
-                        <img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30" style="margin-right: 10px;">
-                        Join The Instagram
-                    </a>
-                    <a href="https://opensea.io/collection/world-parrots" class="blue_btn p-2 px-4">Buy Parrot</a>
+                <div class="col-md-8 ps-md-5">
+                    <div class="text_box p-4" style="text-shadow: none !important;">
+                        {{ hero.hero_body_content|linebreaksbr }}
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 pt-4 justify-content-center">
+                        <a href="https://discord.gg/pA4EeHsj94"
+                            class="fs-4 text-white text-decoration-none d-flex align-items-center">
+                            <img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30"
+                                style="margin-right: 10px; border-radius: 6px;">
+                            Join The Discord
+                        </a>
+                        <a href="https://instagram.com/worldparrotsnft"
+                            class="fs-4 text-white text-decoration-none d-flex align-items-center">
+                            <img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30"
+                                style="margin-right: 10px;">
+                            Join The Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Parrot Images -->
-    <div class="container-lg mt-5 px-md-5">
-        <div class="d-flex overflow-auto no-scrollbar" style="border-radius: 10px; height: 200px !important;">
-            <img src="{% static 'img/1.png' %}" class="container_img me-1">
-            <img src="{% static 'img/2.png' %}" class="container_img me-1">
-            <img src="{% static 'img/3.png' %}" class="container_img me-1">
-            <img src="{% static 'img/4.png' %}" class="container_img me-1">
-            <img src="{% static 'img/5.png' %}" class="container_img me-1">
-            <img src="{% static 'img/6.png' %}" class="container_img me-1">
-            <img src="{% static 'img/7.png' %}" class="container_img me-1">
-            <img src="{% static 'img/8.png' %}" class="container_img me-1">
-            <img src="{% static 'img/9.png' %}" class="container_img me-1">
-            <img src="{% static 'img/10.png' %}" class="container_img me-1">
-            <img src="{% static 'img/11.png' %}" class="container_img me-1">
-            <img src="{% static 'img/12.png' %}" class="container_img me-1">
-            <img src="{% static 'img/13.png' %}" class="container_img me-1">
-            <img src="{% static 'img/14.png' %}" class="container_img me-1">
-            <img src="{% static 'img/15.png' %}" class="container_img me-1">
-            <img src="{% static 'img/16.png' %}" class="container_img me-1">
-            <img src="{% static 'img/17.png' %}" class="container_img me-1">
-            <img src="{% static 'img/18.png' %}" class="container_img me-1">
-            <img src="{% static 'img/19.png' %}" class="container_img me-1">
-            <img src="{% static 'img/20.png' %}" class="container_img me-1">
-            <img src="{% static 'img/21.png' %}" class="container_img me-1">
-            <img src="{% static 'img/22.png' %}" class="container_img me-1">
-            <img src="{% static 'img/23.png' %}" class="container_img me-1">
-            <img src="{% static 'img/24.png' %}" class="container_img me-1">
-            <img src="{% static 'img/25.png' %}" class="container_img me-1">
-            <img src="{% static 'img/26.png' %}" class="container_img me-1">
-            <img src="{% static 'img/27.png' %}" class="container_img me-1">
-            <img src="{% static 'img/28.png' %}" class="container_img me-1">
-            <img src="{% static 'img/29.png' %}" class="container_img me-1">
-            <img src="{% static 'img/30.png' %}" class="container_img me-1">
+    <div class="container-lg mt-5 px-3 px-md-5">
+        <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
+            <div class="d-flex overflow-auto no-scrollbar" style="border-radius: 10px; height: 200px !important;">
+                <img src="{% static 'img/about/141.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/2030.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/3008.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/3181.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/3244.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/3261.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/3480.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/4843.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/4984.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/5123.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/6331.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/6525.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8096.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8269.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8277.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8307.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8446.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8477.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/8485.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/875.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9321.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9419.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9584.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9686.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9897.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9900.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9902.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9906.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9913.png' %}" class="container_img me-1">
+                <img src="{% static 'img/about/9990.png' %}" class="container_img me-1">
+            </div>
         </div>
     </div>
 
     <!-- Swiper -->
-    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about" style="border-top: 5px dotted #fff; padding-top: 40px !important;">
-        <h2 class="display-5 fw-bold">{{ section.section_title_content }}</h2>
-        <p style='padding-bottom: 40px !important; margin-bottom: 0 !important;'
-            class='pt-3 pb-4 fs-5'>
-            {{ section.section_body_content|safe }}
-        </p>
-        <div class="swiper">
-            <div class="swiper-wrapper" style='padding-top: 40px !important;'>
-                <div class="swiper-slide fade-img"><img src="{% static 'img/1.png' %}" class="w-100 rounded"
-                        style="border-radius: 25px !important;"></div>
-                <div class="swiper-slide fade-img"><img src="{% static 'img/4.png' %}" class="w-100 rounded"
-                        style="border-radius: 25px !important;"></div>
-                <div class="swiper-slide fade-img"><img src="{% static 'img/7.png' %}" class="w-100 rounded"
-                        style="border-radius: 25px !important;"></div>
+    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about">
+        <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
+            <h2 class="display-5 fw-bold" style="border-top: 5px dotted #fff; padding-top: 40px !important;">
+                {{ section.section_title_content }}</h2>
+            <p style='padding-bottom: 40px !important; margin-bottom: 0 !important;' class='pt-3 pb-4 fs-5'>
+                {{ section.section_body_content|linebreaksbr }}
+            </p>
+            <div class="swiper">
+                <div class="swiper-wrapper" style='padding-top: 40px !important;'>
+                    <div class="swiper-slide fade-img"><img src="{% static 'img/1.png' %}" class="w-100 rounded"
+                            style="border-radius: 25px !important;"></div>
+                    <div class="swiper-slide fade-img"><img src="{% static 'img/4.png' %}" class="w-100 rounded"
+                            style="border-radius: 25px !important;"></div>
+                    <div class="swiper-slide fade-img"><img src="{% static 'img/7.png' %}" class="w-100 rounded"
+                            style="border-radius: 25px !important;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -171,7 +178,7 @@
                         {{ gallery.gallery_title_content }}
                     </h2>
                     <p class="fs-5">
-                        {{ gallery.gallery_body_content|safe }}
+                        {{ gallery.gallery_body_content|linebreaksbr }}
                     </p>
                     <div class="w-100 pt-5 d-flex justify-content-center">
                         <a href="{% url 'gallery' %}" class="blue_btn p-2 px-4 mb-5">GALLERY</a>
@@ -189,7 +196,7 @@
             <div id="roadmap" class="py-2 w-100 p-0 m-0 d-flex row">
                 <h1 class="p-0 m-0 display-4 fw-bold text-center">{{ road_map.roadmap_title_content }}</h1>
                 <p class="p-0 m-0 pt-4 fs-5">
-                    {{ road_map.roadmap_body_content|safe }}
+                    {{ road_map.roadmap_body_content|linebreaksbr }}
                 </p>
                 <section class="timeline">
                     <ul style="padding-left: 0;">
@@ -206,7 +213,7 @@
                                         </svg>
                                         {{ box.box_title_giveaway }}
                                     </phase>
-                                    Giveaway: {{ box.box_body_giveaway|safe }}
+                                    {{ box.box_body_giveaway|linebreaksbr }}
                                 </p>
                             </div>
                         </li>
@@ -219,21 +226,21 @@
 
     <section class="w-100 p-3 px-3 px-md-5 container-lg">
         <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
-            <div style="border-top: 5px dotted #fff;" class="py-5 w-100 p-0 m-0 d-flex row" id="token">
-                <div class="col-md-6 p-0 m-0">
-                    <h2 class="fs-2 fw-bold mb-4">
-                        {{ wrp.WRP_title_content }}
-                    </h2>
-                    <p class="fs-5">
-                        {{ wrp.WRP_body_content|safe }}
-                    </p>
-                    <div class="w-100 pt-5 d-flex justify-content-center">
-                        <a href="#token" class="blue_btn p-2 px-4 mb-5">$WRP token (soon)</a>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="border-top: 5px dotted #fff;" class="py-5 w-100 p-0 m-0 d-flex row" id="token">
+                    <div class="col-md-6 p-0 m-0">
+                        <h2 class="fs-2 fw-bold mb-4">
+                            {{ wrp.WRP_title_content }}
+                        </h2>
+                        <p class="fs-5">
+                            {{ wrp.WRP_body_content|linebreaksbr }}
+                        </p>
+                    </div>
+                    <div class="col-md-6 p-0 m-0">
+                        <img src="{% static 'img/wrp.png' %}" class="w-100 px-md-5 py-md-4 mt-2" />
                     </div>
                 </div>
-                <div class="col-md-6 p-0 m-0">
-                    <img src="{% static 'img/wrp.png' %}" class="w-100 px-md-5 py-md-4 mt-2" />
-                </div>
+                <a href="#token" class="blue_btn p-2 px-4 mb-5">$WRP token (soon)</a>
             </div>
         </div>
     </section>
@@ -248,15 +255,20 @@
     <footer>
         <div style="background-color: #333;" class="p-3 text-center">
             <a href="https://discord.gg/pA4EeHsj94" class="text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30" height="30" style="border-radius: 6px;"></a>
+                style="padding: 10px !important;"><img src="{% static 'img/discord.jpeg' %}" alt="discord" width="30"
+                    height="30" style="border-radius: 6px;"></a>
             <a href="https://instagram.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30" height="30"></a>
+                style="padding: 10px !important;"><img src="{% static 'img/Instagram.png' %}" alt="instagram" width="30"
+                    height="30"></a>
             <a href="https://x.com/worldparrotsnft" class="text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/X_ico.jpg' %}" alt="x_ico" width="30" height="30" style="border-radius: 6px;"></a>
+                style="padding: 10px !important;"><img src="{% static 'img/X_ico.jpg' %}" alt="x_ico" width="30"
+                    height="30" style="border-radius: 6px;"></a>
             <a href="https://opensea.io/collection/world-parrots" class="text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/opensea.png' %}" alt="opensea" width="30" height="30" style="border-radius: 6px;"></a>
+                style="padding: 10px !important;"><img src="{% static 'img/opensea.png' %}" alt="opensea" width="30"
+                    height="30" style="border-radius: 6px;"></a>
             <a href="https://rarible.com/world-parrots/items" class="text-white px-2 fs-3 rounded-circle"
-                style="padding: 10px !important;"><img src="{% static 'img/rarible.png' %}" alt="rarible" width="30" height="30"></a>
+                style="padding: 10px !important;"><img src="{% static 'img/rarible.png' %}" alt="rarible" width="30"
+                    height="30"></a>
             <div class="text-white mt-3 fs-5">
                 ©2025: <a class="ps-2 text-white" href="#">WorldParrots.com — Every NFT, A Wing for Change</a>
             </div>

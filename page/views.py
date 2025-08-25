@@ -25,11 +25,14 @@ def mint(request):
     return render(request, 'page/mint.html')
 
 def gallery(request, collection_slug='world-parrots'):
+    world_parrot = models.WorldParrot.objects.all().first()
+
     context = {
         'collection_slug': collection_slug,
         'nfts': [],
         'error': None,
         'next_cursor': None,
+        'world_parrot': world_parrot,
     }
 
     url = f"https://api.opensea.io/api/v2/collection/{collection_slug}/nfts"

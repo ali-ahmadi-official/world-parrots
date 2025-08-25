@@ -31,3 +31,7 @@ class Box(models.Model):
 class WRP(models.Model):
     WRP_title_content = models.CharField(max_length=1000)
     WRP_body_content = models.TextField()
+
+class WorldParrot(models.Model):
+    world_parrot_title_content = models.CharField(max_length=1000)
+    world_parrot_body_content = models.TextField()

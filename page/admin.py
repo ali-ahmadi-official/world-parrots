@@ -43,9 +43,16 @@ class WRPAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False
 
+class WorldParrotAdmin(admin.ModelAdmin):
+    def has_delete_permission(self, request, obj = ...):
+        return False
+    
+    def has_add_permission(self, request):
+        return False
 
 admin.site.register(models.Hero, HeroAdmin)
 admin.site.register(models.Section, SectionAdmin)
 admin.site.register(models.Gallery, GalleryAdmin)
 admin.site.register(models.RoadMap, RoadMapAdmin)
 admin.site.register(models.WRP, WRPAdmin)
+admin.site.register(models.WorldParrot, WorldParrotAdmin)

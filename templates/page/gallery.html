@@ -19,8 +19,8 @@
         <div class="profile">
             <img src="{% static 'img/icon.png' %}" alt="World Parrots">
             <div class="pro-content">
-                <h3>World Parrots</h3>
-                <p>Pixel art NFTs from world parrots collection that is produced from 10.000 NFTs.</p>
+                <h3>{{ world_parrot.world_parrot_title_content }}</h3>
+                <p>{{ world_parrot.world_parrot_body_content|linebreaksbr }}</p>
                 <div class="boxs">
                     <div class="box">pfps</div>
                     <div class="box">10,000</div>
