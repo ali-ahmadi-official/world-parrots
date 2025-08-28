@@ -36,12 +36,12 @@
     </div>
 
     <!-- Header -->
-    <header class="w-100 p-3 container-lg p-3 px-3 px-md-5">
-        <div class="row">
-            <div class="col-6">
+    <header class="w-100 container-lg p-3 px-3 px-md-5">
+        <div class="row p-3 px-3 px-md-5">
+            <div class="col-3">
                 <img src="{% static 'img/Logo.png' %}" style="width: 170px;">
             </div>
-            <div class="col-6 d-none d-md-flex justify-content-end align-items-center">
+            <div class="col-9 d-none d-md-flex justify-content-end align-items-center">
                 <a href="#token" class="mx-1 p-2 px-3 fw-bold my-hover-blue">$WRP TOKEN</a>
                 <a href="#roadmap" class="mx-1 p-2 px-3 fw-bold my-hover-blue">ROADMAP</a>
                 <a href="{% url 'gallery' %}" class="mx-1 p-2 px-3 fw-bold my-hover-blue">GALLERY</a>
@@ -85,7 +85,7 @@
     </section>
 
     <!-- Parrot Images -->
-    <div class="container-lg mt-5 px-3 px-md-5">
+    <div class="container-lg px-3 px-md-5">
         <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
             <div class="d-flex overflow-auto no-scrollbar" style="border-radius: 10px; height: 200px !important;">
                 <img src="{% static 'img/about/141.png' %}" class="container_img me-1">
@@ -123,11 +123,11 @@
     </div>
 
     <!-- Swiper -->
-    <div class="container-lg mt-5 p-3 px-3 px-md-5" id="about">
-        <div class="w-100 p-0 m-0 py-3 px-md-5 px-3">
+    <div class="container-lg p-3 px-3 px-md-5" id="about">
+        <div class="w-100 p-0 m-0 py-3 px-md-5 px-3" style="padding-bottom: 8px !important;">
             <h2 class="display-5 fw-bold" style="border-top: 5px dotted #fff; padding-top: 40px !important;">
                 {{ section.section_title_content }}</h2>
-            <p style='padding-bottom: 40px !important; margin-bottom: 0 !important;' class='pt-3 pb-4 fs-5'>
+            <p style='padding-bottom: 0 !important; margin-bottom: 0 !important;' class='pt-3 fs-5'>
                 {{ section.section_body_content|linebreaksbr }}
             </p>
             <div class="swiper">
@@ -146,7 +146,7 @@
     <!-- Roadmap Section -->
 
     <section class="p-3 px-3 px-md-5">
-        <h2 class="mt-5 fs-3 text-center fw-bold">
+        <h2 class="fs-3 text-center fw-bold">
             You can view the World Parrots collection on:
         </h2>
         <div class="d-flex mt-2 justify-content-center row">
@@ -270,7 +270,7 @@
                 style="padding: 10px !important;"><img src="{% static 'img/rarible.png' %}" alt="rarible" width="30"
                     height="30"></a>
             <div class="text-white mt-3 fs-5">
-                ©2025: <a class="ps-2 text-white" href="#">WorldParrots.com — Every NFT, A Wing for Change</a>
+                ©2025: <a class="ps-2 text-white" href="https://worldparrots.xyz">WorldParrots.xyz — Every NFT, A Wing for Change</a>
             </div>
         </div>
     </footer>
