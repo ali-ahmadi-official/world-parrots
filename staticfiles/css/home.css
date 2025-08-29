@@ -61,6 +61,10 @@
 }
 
 @media screen and (max-width : 768px) {
+  .text_box {
+    font-size: 1.25rem;
+  }
+
   .font-small-phone {
     font-size: 16px !important;
   }
